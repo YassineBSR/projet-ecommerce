@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPhone</title>
+    <!-- jquery cdn -->
+   
+ <link rel="stylesheet" href="/assets/css/style.css">
+
+
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="hubmenu">
+                    <li><a href="/Catalogue.html">Catalogue</a></li>
+                    <li><a href="/hub.html">Hub</a></li>
+                    <li><a href="/apropos.html">A Propos</a></li>
+                    <li><a href="">Panier</a> </li>
+                </div>
+            </ul>
+        </nav>
+    
+    </header>
+    <section>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="casque">Casque</li>
+            <li class="list" data-filter="chargeur">Chargeur</li>
+            <li class="list" data-filter="coque">Coque</li>
+          
+            </ul> 
+             <ul>
+            <li class="list" data-filter="filme">Filme</li>
+            <li class="list" data-filter="powerbank">Powerbank</li>
+            <li class="list" data-filter="montre">Montre</li>
+
+        </ul>
+        <div class="product">
+            <div class="itemBox casque"><a href="/casque.html"><img src="/assets/image/casque.jpg" alt=""></a></div>
+            <div class="itemBox chargeur"><a href="/chargeur.html"><img src="/assets/image/chargiphone.jpg" alt=""></a></div>
+            <div class="itemBox coque"><a href="/coque.html"><img src="/assets/image/coqueiphone.jpg" alt=""></a></div>
+            <div class="itemBox filme"><a href="/filme.html"><img src="/assets/image/filmiphone.jpg" alt=""></a></div>
+            <div class="itemBox powerbank"><a href="/powerbank.html"><img src="/assets/image/powerbank.jpg" alt=""></a></div>
+            <div class="itemBox montre"><a href="/montre.html"><img src="/assets/image/montre.jpg" alt=""></a></div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+     <script >
+    $(document).ready(function(){
+        $('.list').click(function(){
+            const value = $(this).attr('data-filter');
+            if (value == 'all'){
+                $('.itemBox').show('1000');
+            }
+            else{
+                $('.itemBox').not('.'+value).hide('1000');
+                $('.itemBox').filtre('.'+value).show('1000');
+  
+            }
+        })
+       $('.list').click(function(){
+          $(this).addClass('active').siblings().removeClass('active');
+       })
+       })
+    </script>
+
+</body>
+</html>

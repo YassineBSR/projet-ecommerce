@@ -1,0 +1,77 @@
+
+html{
+    background-color: #F59C35;
+}
+nav{
+    width: 100%;
+    margin:  0 auto;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid;
+    padding: 10px 0px;
+    text-transform: uppercase;
+   
+}
+nav a:hover{
+    color:#26B3FB;
+    border-bottom: 2px solid #405159;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: boath;
+}
+
+/* grid.layoutit.com?id=HN19sSt */
+
+/* CSS CASQUE */
+.grid-container {
+    float: left;
+    padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.6fr 1fr 0.5fr;
+        gap: 10px 10px;
+        grid-template-areas:
+          "back title ."
+          "photo photo desc"
+          ". cart .";
+      }
+        
+  .back { grid-area: back; 
+max-width: 100%;
+}
+  
+  .title { grid-area: title; 
+   color: #26B3FB;
+   font-size: 4em;
+   text-decoration: underline #405159;
+}
+  
+  .photo { grid-area: photo; }
+  
+  .desc { grid-area: desc;
+  text-align: center;
+  font-size: 20px;
+  border: #405159 solid;
+  font-size: 1.5em;
+}
+  
+  .cart { grid-area: cart; }
+
+  .imgcasque{
+      max-width: 100%;
+  }
+
+ 

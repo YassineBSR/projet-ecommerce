@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+
+*{
+    background-color: #F59C35;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    width: 100%;
+    margin:  0 auto;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid;
+    padding: 10px 0px;
+    text-transform: uppercase;
+   
+}
+nav a:hover{
+    color:#26B3FB;
+    border-bottom: 2px solid #405159;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: boath;
+}
+/* CSS HUB */
+  .parent {
+    display: grid;
+    float: left;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { grid-area: 1 / 2 / 2 / 3; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
+    .div4 { grid-area: 2 / 3 / 3 / 4; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 3 / 2 / 4 / 3; }
+    .div7 { grid-area: 3 / 3 / 4 / 4; }
+    
+
+
+
+  .Logo2{
+    max-width: 100%;
+  }
+  .Casque2{
+    max-width: 100%;
+  }
+  .Chargeur2{
+    max-width: 100%;
+  }
+  .Coque2{
+    max-width: 100%;
+  }
+  .filme2{
+    max-width: 100%;
+  }
+  .Montre2{
+    max-width: 100%;
+  }
+  .Powerbank2{
+    max-width: 100%;
+  }
+
+/* CSS CATALOGUE */
+
+section{
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+  max-width: 100%;
+}
+section ul{
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 5%;
+}
+section ul li{
+  list-style: none;
+  background: #eee;
+  padding: 8px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+section ul li.active
+{
+  background: #405159;
+  color: #26B3FB;
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+}
+.product .itemBox{
+ position: relative;
+ width: 300px;
+ height: 300px;
+ margin: 5px;
+}
+.product .itemBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS APROPOS */
+
+p{
+  padding: 25px;
+}
+b{
+  color: #405159;
+}
+.tcarte{
+  padding: 10px;
+}
+.carte{
+  border: #405159 solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; 
+  
+}
+h2{
+  padding: 10px;
+}
+h1{
+  text-align: center;
+  color: #405159;
+  padding: 10px;
+}
